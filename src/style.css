@@ -1,0 +1,150 @@
+html,
+body {
+  min-width: 290px;
+  color: #cdcdcd;
+  background-color: #0e553f;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  color: #0e553f;
+  background-color: rgb(201, 161, 7);
+}
+
+header {
+  color: #ffcc0b;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0;
+}
+
+#navbar ul {
+  height: 85%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #0e553f;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #0e553f;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar header {
+  color: #0e553f;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #cecece;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code.block {
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+a {
+  color: #ffcc0b;
+}
+
+a:visited {
+  color: #fae89d;
+}
+
+p {
+  text-align: justify;
+}
+
+code {
+  background-color: #fae89d;
+  color: #005339;
+  font-family: "Fira Code", Monospaced, serif;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
